@@ -1,0 +1,11 @@
+.btn {
+  &.btn-primary {
+    &:hover {
+      color: $secondary;
+    }
+    &.disabled {
+      color: #EBEAE3;
+      background-color: #9A9A9A;
+    }
+  }
+}

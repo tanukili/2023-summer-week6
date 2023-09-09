@@ -5,6 +5,10 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables';
 
+@import './components/button';
+@import './components/card';
+@import './components/category-label';
+@import './components/title-bar';
 
 @import './layout/header.scss';
 @import './layout/footer.scss';

@@ -8,12 +8,34 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
-
-    <h1 class="index-title">我是首頁</h1>
+    <div class="title-bar">
+      <h2>RECENT<span>近期活動</span></h2>
+    </div>title-bar
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">帳號</label>
+      <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
 
     <%- include('./layout/marquee'); -%>
     <i class="icofont-ui-file"></i><i class="icofont-ui-file"></i><i class="icofont-ui-file"></i>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At numquam perspiciatis alias distinctio quibusdam esse laborum deserunt, harum ipsum eos.</p>
+    <div class="card" style="width: 18rem;">
+      <div class="card-header">
+        Featured
+      </div>
+      <img src="../assets/images/cate01.svg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+      <div class="card-footer text-muted">
+        2 days ago
+      </div>
+    </div>
+    <div>
+      <a href="#" class="category-label">競賽</a>
+    </div>
+
     <%- include('./layout/marquee'); -%>
 
     <%- include('./layout/footer'); -%>

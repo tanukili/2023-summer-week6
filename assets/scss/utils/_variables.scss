@@ -298,12 +298,15 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+// $primary:       $blue !default;
+$primary:       #030303 !default; // custom
+// $secondary:     $gray-600 !default;
+$secondary:     #FBFF22 !default; // custom
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
-$danger:        $red !default;
+// $danger:        $red !default;
+$danger:        #C96464 !default; // custom
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
 // scss-docs-end theme-color-variables
@@ -398,8 +401,10 @@ $position-values: (
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   $white !default;
-$body-color:                $gray-900 !default;
+// $body-bg:                   $white !default;
+$body-bg:                   #F3F1E5 !default; // custom
+// $body-color:                $gray-900 !default;
+$body-color:                $primary !default; //custom
 $body-text-align:           null !default;
 
 // Links
@@ -407,9 +412,11 @@ $body-text-align:           null !default;
 // Style anchor elements.
 
 $link-color:                              $primary !default;
-$link-decoration:                         underline !default;
+// $link-decoration:                         underline !default;
+$link-decoration:                         none !default; //custom
 $link-shade-percentage:                   20% !default;
-$link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
+// $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
+$link-hover-color:                        rgba(156, 158, 24, 1) !default; //custom
 $link-hover-decoration:                   null !default;
 
 $stretched-link-pseudo-element:           after !default;
@@ -540,7 +547,8 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+// $font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:      "Yeseva One", "Noto Serif TC",system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default; //custom
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
 $font-family-base:            var(--#{$prefix}font-sans-serif) !default;
@@ -563,8 +571,10 @@ $font-weight-bolder:          bolder !default;
 $font-weight-base:            $font-weight-normal !default;
 
 $line-height-base:            1.5 !default;
-$line-height-sm:              1.25 !default;
-$line-height-lg:              2 !default;
+// $line-height-sm:              1.25 !default;
+$line-height-sm:              1.155 !default; // custom
+// $line-height-lg:              2 !default;
+$line-height-lg:              1.4375 !default; // custom
 
 $h1-font-size:                $font-size-base * 2.5 !default;
 $h2-font-size:                $font-size-base * 2 !default;
@@ -606,7 +616,8 @@ $display-font-sizes: (
 
 $display-font-family: null !default;
 $display-font-style:  null !default;
-$display-font-weight: 300 !default;
+// $display-font-weight: 300 !default;
+$display-font-weight: 400 !default; //custom
 $display-line-height: $headings-line-height !default;
 // scss-docs-end display-headings
 
@@ -759,23 +770,28 @@ $btn-padding-y-lg:            $input-btn-padding-y-lg !default;
 $btn-padding-x-lg:            $input-btn-padding-x-lg !default;
 $btn-font-size-lg:            $input-btn-font-size-lg !default;
 
-$btn-border-width:            $input-btn-border-width !default;
+// $btn-border-width:            $input-btn-border-width !default;
+$btn-border-width:            0 !default; // custom
 
-$btn-font-weight:             $font-weight-normal !default;
+// $btn-font-weight:             $font-weight-normal !default;
+$btn-font-weight:             $font-weight-bold !default; //custom
 $btn-box-shadow:              inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($black, .075) !default;
 $btn-focus-width:             $input-btn-focus-width !default;
 $btn-focus-box-shadow:        $input-btn-focus-box-shadow !default;
-$btn-disabled-opacity:        .65 !default;
+// $btn-disabled-opacity:        .65 !default;
+$btn-disabled-opacity:        1 !default; // custom
 $btn-active-box-shadow:       inset 0 3px 5px rgba($black, .125) !default;
 
 $btn-link-color:              var(--#{$prefix}link-color) !default;
 $btn-link-hover-color:        var(--#{$prefix}link-hover-color) !default;
-$btn-link-disabled-color:     $gray-600 !default;
+// $btn-link-disabled-color:     $gray-600 !default;
+$btn-link-disabled-color:     rgba(235, 234, 227, 1) !default;
 
 // Allows for customizing button radius independently from global border radius
 $btn-border-radius:           $border-radius !default;
 $btn-border-radius-sm:        $border-radius-sm !default;
-$btn-border-radius-lg:        $border-radius-lg !default;
+// $btn-border-radius-lg:        $border-radius-lg !default;
+$btn-border-radius-lg:        0 !default; // custom
 
 $btn-transition:              color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
 
@@ -805,7 +821,8 @@ $form-label-margin-bottom:              .5rem !default;
 $form-label-font-size:                  null !default;
 $form-label-font-style:                 null !default;
 $form-label-font-weight:                null !default;
-$form-label-color:                      null !default;
+// $form-label-color:                      null !default;
+$form-label-color:                      $black !default; // custom
 // scss-docs-end form-label-variables
 
 // scss-docs-start form-input-variables
@@ -831,12 +848,14 @@ $input-disabled-border-color:           null !default;
 
 $input-color:                           $body-color !default;
 $input-border-color:                    $gray-400 !default;
-$input-border-width:                    $input-btn-border-width !default;
+// $input-border-width:                    $input-btn-border-width !default;
+$input-border-width:                    2px !default; // custom
 $input-box-shadow:                      $box-shadow-inset !default;
 
 $input-border-radius:                   $border-radius !default;
 $input-border-radius-sm:                $border-radius-sm !default;
-$input-border-radius-lg:                $border-radius-lg !default;
+// $input-border-radius-lg:                $border-radius-lg !default;
+$input-border-radius-lg:                0 !default; // custom
 
 $input-focus-bg:                        $input-bg !default;
 $input-focus-border-color:              tint-color($component-active-bg, 50%) !default;
@@ -1232,21 +1251,31 @@ $placeholder-opacity-min:           .2 !default;
 // Cards
 
 // scss-docs-start card-variables
-$card-spacer-y:                     $spacer !default;
-$card-spacer-x:                     $spacer !default;
-$card-title-spacer-y:               $spacer * .5 !default;
-$card-border-width:                 $border-width !default;
+// $card-spacer-x:                     $spacer !default;
+$card-spacer-x:                     0 !default; // custom
+// $card-spacer-y:                     $spacer !default;
+$card-spacer-y:                     0 !default; // custom
+// $card-title-spacer-y:               $spacer * .5 !default;
+$card-title-spacer-y:               $spacer * .75 !default; // custom
+// $card-border-width:                 $border-width !default;
+$card-border-width:                 0 !default; //custom
 $card-border-color:                 var(--#{$prefix}border-color-translucent) !default;
-$card-border-radius:                $border-radius !default;
+// $card-border-radius:                $border-radius !default;
+$card-border-radius:                0 !default; // custom
 $card-box-shadow:                   null !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
-$card-cap-padding-y:                $card-spacer-y * .5 !default;
-$card-cap-padding-x:                $card-spacer-x !default;
-$card-cap-bg:                       rgba($black, .03) !default;
+// $card-cap-padding-y:                $card-spacer-y * .5 !default;
+$card-cap-padding-y:                $spacer * .75 !default;
+// $card-cap-padding-x:                $card-spacer-x !default;
+$card-cap-padding-x:                0 !default;
+// $card-cap-bg:                       rgba($black, .03) !default;
+$card-cap-bg:                       inherit !default; // custom
 $card-cap-color:                    null !default;
 $card-height:                       null !default;
-$card-color:                        null !default;
-$card-bg:                           $white !default;
+// $card-color:                        null !default;
+$card-color:                        inherit !default;
+// $card-bg:                           $white !default;
+$card-bg:                           inherit !default; // custom
 $card-img-overlay-padding:          $spacer !default;
 $card-group-margin:                 $grid-gutter-width * .5 !default;
 // scss-docs-end card-variables

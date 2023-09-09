@@ -1,0 +1,11 @@
+.category-label {
+  padding: 4px 24px;
+  border: 1px solid $black;
+  border-left: 4px solid $black;
+  margin-right: 8px;
+  &:hover {
+    background: $primary;
+    color: $white;
+    border-left-color: $secondary;
+  }
+}
