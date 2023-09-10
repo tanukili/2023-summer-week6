@@ -18,6 +18,13 @@
     }
   }
 }
+@media(min-width: 1200px) {
+  @each $number, $size in $font-sizes {
+    .fs-xl-#{$number} {
+      font-size: $size !important;
+    }
+  } 
+}
 // RWD lh
 @include pad {
   .lh-md-lg {

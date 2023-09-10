@@ -1,11 +1,22 @@
 .title-bar {
-  border: 3px solid $primary;
-  padding: 24px 32px;
+  border: 2px solid $primary;
+  padding: 16px 12px;
   h2 {
     display: flex;
+    align-items: center;
+    @include wed {
+      font-size: 64px !important;
+    }
     span {
       display: inline-block;
       margin-left: auto;
     }
+  }
+  @include pad {
+    padding: 20px 26px;
+  }
+  @include wed {
+    border-width: 3px;
+    padding: 24px 32px;
   }
 }

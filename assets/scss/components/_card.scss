@@ -1,8 +1,76 @@
 .card {
   img {
-    padding: 12px 0;
+    margin: 16px 0 8px 0;
+    height: 210px;
+    @include pad {
+      margin: 12px 0;
+      height: 255px;
+    }
   }
-  .card-text:last-child {
-    margin-bottom: 16px;
+  .card-title {
+    @include pad {
+      margin-bottom: 12px;
+    }
+  }
+  .card-text {
+    height: 72px;
+    overflow: hidden;
+    text-align: justify;
+    &:last-child {
+      margin-bottom: 16px;
+    }
+  }
+  .card-footer {
+    @include pad {
+      padding: 12px 0;
+    }
+    a:hover {
+      color: inherit;
+    }
+    small {
+      &::before {
+        content: '';
+        background: url('../images/sparkler.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        vertical-align: top;
+        margin-right: 4px;
+        @include pad {
+          width: 24px;
+          height: 24px;
+        }
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    a:last-child {
+      position: relative;
+      &::after {
+        font-family: 'IcoFont';
+        content: '\ea98';
+        margin-left: 4px;
+      }
+      &:hover {
+        span {
+          background: $secondary;
+          display: inline-block;
+          width: 26px;
+          height: 26px;
+          border-radius: 50%;
+          position: absolute;
+          z-index: -1;
+          left: -12.5%;
+          top: -12.5%;
+          @include pad {
+            width: 29px;
+            height: 29px;
+          }
+        }
+      }
+    }
   }
 }
