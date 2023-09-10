@@ -7,3 +7,17 @@
     height: 518px;
   }
 }
+.index-nav{
+  img {
+    width: 40px;
+    @include wed {
+      width: 80px;
+    }
+  }
+  .nav-item:last-child a {
+    line-height: 1.33;
+    @include wed {
+      line-height: 1.25;
+    }
+  }
+}

@@ -8,6 +8,7 @@
 @import './utils/utilities';
 @import './utils/mixin';
 
+@import "../../node_modules/bootstrap";
 @import './base/base';
 
 @import './components/button';
@@ -21,4 +22,3 @@
 @import './layout/header.scss';
 @import './pages/index.scss';
 
-@import "../../node_modules/bootstrap";

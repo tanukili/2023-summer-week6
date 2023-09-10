@@ -3,7 +3,7 @@
   font-family: "Noto Serif TC",var(--bs-font-sans-serif);
 }
 
-// RWD
+// RWD fs
 @include pad {
   @each $number, $size in $font-sizes {
     .fs-md-#{$number} {
@@ -16,5 +16,16 @@
     .fs-lg-#{$number} {
       font-size: $size !important;
     }
+  }
+}
+// RWD lh
+@include pad {
+  .lh-md-lg {
+    line-height: $line-height-lg !important;
+  }
+}
+@include wed {
+  .lh-lg-lg {
+    line-height: $line-height-lg !important;
   }
 }
