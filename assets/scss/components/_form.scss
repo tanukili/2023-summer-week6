@@ -1,0 +1,16 @@
+// input color
+input::placeholder {
+  color: $gray-700;
+}
+
+// RWD
+@include pad {
+  .form-control {
+    padding: 14px 24px !important;
+  }
+}
+
+// icon
+.icofont-ui-file:before {
+  margin-right: 4px;
+}

@@ -13,7 +13,8 @@ $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
 $gray-600: #6c757d !default;
-$gray-700: #495057 !default;
+// $gray-700: #495057 !default;
+$gray-700: #4F4F4F !default; // custom
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
@@ -320,7 +321,8 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "black":      $black // custom
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -499,7 +501,8 @@ $border-color-translucent:    rgba($black, .175) !default;
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
-$border-radius:               .375rem !default;
+// $border-radius:               .375rem !default;
+$border-radius:               0rem !default; // custom
 $border-radius-sm:            .25rem !default;
 $border-radius-lg:            .5rem !default;
 $border-radius-xl:            1rem !default;
@@ -548,7 +551,7 @@ $aspect-ratios: (
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
 // $font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-family-sans-serif:      "Yeseva One", "Noto Serif TC",system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default; //custom
+$font-family-sans-serif:      "Yeseva One", "Noto Sans TC", "Noto Serif TC",system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default; //custom
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
 $font-family-base:            var(--#{$prefix}font-sans-serif) !default;
@@ -591,7 +594,8 @@ $font-sizes: (
   3: $h3-font-size,
   4: $h4-font-size,
   5: $h5-font-size,
-  6: $h6-font-size
+  6: $h6-font-size,
+  7: $font-size-base * 1.125, // custom
 ) !default;
 // scss-docs-end font-sizes
 
@@ -726,7 +730,8 @@ $table-variants: (
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
 // scss-docs-start input-btn-variables
-$input-btn-padding-y:         .375rem !default;
+// $input-btn-padding-y:         .375rem !default;
+$input-btn-padding-y:         .5rem !default; // custom
 $input-btn-padding-x:         .75rem !default;
 $input-btn-font-family:       null !default;
 $input-btn-font-size:         $font-size-base !default;
@@ -847,12 +852,14 @@ $input-disabled-bg:                     $gray-200 !default;
 $input-disabled-border-color:           null !default;
 
 $input-color:                           $body-color !default;
-$input-border-color:                    $gray-400 !default;
+// $input-border-color:                    $gray-400 !default;
+$input-border-color:                    $primary !default;
 // $input-border-width:                    $input-btn-border-width !default;
 $input-border-width:                    2px !default; // custom
 $input-box-shadow:                      $box-shadow-inset !default;
 
-$input-border-radius:                   $border-radius !default;
+// $input-border-radius:                   $border-radius !default;
+$input-border-radius:                   0 !default; // custom
 $input-border-radius-sm:                $border-radius-sm !default;
 // $input-border-radius-lg:                $border-radius-lg !default;
 $input-border-radius-lg:                0 !default; // custom
@@ -1101,7 +1108,8 @@ $nav-pills-link-active-bg:          $component-active-bg !default;
 // Navbar
 
 // scss-docs-start navbar-variables
-$navbar-padding-y:                  $spacer * .5 !default;
+// $navbar-padding-y:                  $spacer * .5 !default;
+$navbar-padding-y:                  $spacer * .75 !default;
 $navbar-padding-x:                  null !default;
 
 $navbar-nav-link-padding-x:         .5rem !default;
@@ -1116,13 +1124,18 @@ $navbar-brand-margin-end:           1rem !default;
 $navbar-toggler-padding-y:          .25rem !default;
 $navbar-toggler-padding-x:          .75rem !default;
 $navbar-toggler-font-size:          $font-size-lg !default;
-$navbar-toggler-border-radius:      $btn-border-radius !default;
-$navbar-toggler-focus-width:        $btn-focus-width !default;
+// $navbar-toggler-border-radius:      $btn-border-radius !default;
+$navbar-toggler-border-radius:      $btn-border-radius-sm !default; // custom
+// $navbar-toggler-focus-width:        $btn-focus-width !default;
+$navbar-toggler-focus-width:        1px !default; // custom
 $navbar-toggler-transition:         box-shadow .15s ease-in-out !default;
 
-$navbar-light-color:                rgba($black, .55) !default;
-$navbar-light-hover-color:          rgba($black, .7) !default;
-$navbar-light-active-color:         rgba($black, .9) !default;
+// $navbar-light-color:                rgba($black, .55) !default;
+$navbar-light-color:                rgba($primary, 1) !default; //custom
+// $navbar-light-hover-color:          rgba($black, .7) !default;
+$navbar-light-hover-color:          #9C9E18 !default; // custom
+// $navbar-light-active-color:         rgba($black, .9) !default;
+$navbar-light-active-color:         rgba($primary, .8) !default; // custom
 $navbar-light-disabled-color:       rgba($black, .3) !default;
 $navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
 $navbar-light-toggler-border-color: rgba($black, .1) !default;

@@ -1,8 +1,36 @@
-<h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="activties-list.html">activities-list</a>
-<a href="activity.html">activity</a>
-<a href="checkout.html">checkout</a>
-<a href="checkout-complete.html">checkout-complete</a>
-<a href="login.html">login</a>
-<a href="payment.html">payment</a>
+<nav class="navbar navbar-expand-md">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center w-100">
+      <a class="navbar-brand d-flex align-items-center me-0 me-lg-4" href="index.html">
+        <img src="/assets/images/logo.png" alt="logo" class="logo d-inline-block me-sm-3">
+        <span class="d-none d-md-inline-block fs-2 text-primary">
+          7TAO
+          <span class="d-none d-lg-inline-block fs-6 text-black fw-bold align-middle me-1">活動訂票網</span>
+        </span>
+      </a>
+      <form class="d-flex mx-4 me-md-auto" role="search">
+        <input class="form-control lh-lg" type="search" placeholder="探索活動" style="max-width: 284px;">
+        <button class="btn btn-black text-secondary px-md-3" type="submit">
+          <i class="icofont-search-1 fs-md-5"></i>        
+        </button>
+      </form>
+      <button class="navbar-toggler border-primary" type="button" data-bs-toggle="collapse" data-bs-target="#headerNavbar" aria-controls="headerNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="headerNavbar">
+      <ul class="navbar-nav text-primary">
+        <li class="nav-item">
+          <a class="nav-link fs-7 me-md-1 me-lg-3" href="activties-list.html">
+            <i class="icofont-ui-file lh-sm">REGISTER</i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-7" href="login.html">
+            <i class="icofont-ui-user lh-sm">LOGIN</i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

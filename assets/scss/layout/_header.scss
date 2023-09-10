@@ -1,4 +1,7 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.logo {
+  width: 40px;
+  height: auto;
+  @include pad {
+    width: 53px;
+  }
 }
