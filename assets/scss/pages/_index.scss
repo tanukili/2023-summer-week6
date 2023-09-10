@@ -1,3 +1,9 @@
-.index-title {
-  font-size: 100px;
+.index-banner img {
+  height: 350px;
+  @include pad {
+    height: auto;
+  }
+  @include wed {
+    height: 518px;
+  }
 }

@@ -1,3 +1,8 @@
+// special font-family
+.font-serif {
+  font-family: "Noto Serif TC",var(--bs-font-sans-serif);
+}
+
 // RWD
 @include pad {
   @each $number, $size in $font-sizes {

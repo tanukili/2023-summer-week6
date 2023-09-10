@@ -428,7 +428,8 @@ $stretched-link-z-index:                  1 !default;
 //
 // Style p element.
 
-$paragraph-margin-bottom:   1rem !default;
+// $paragraph-margin-bottom:   1rem !default;
+$paragraph-margin-bottom:   0rem !default; // custom
 
 
 // Grid breakpoints
@@ -600,7 +601,8 @@ $font-sizes: (
 // scss-docs-end font-sizes
 
 // scss-docs-start headings-variables
-$headings-margin-bottom:      $spacer * .5 !default;
+// $headings-margin-bottom:      $spacer * .5 !default;
+$headings-margin-bottom:      $spacer * 0 !default; // custom
 $headings-font-family:        null !default;
 $headings-font-style:         null !default;
 $headings-font-weight:        500 !default;
@@ -1289,7 +1291,8 @@ $card-height:                       null !default;
 $card-color:                        inherit !default;
 // $card-bg:                           $white !default;
 $card-bg:                           inherit !default; // custom
-$card-img-overlay-padding:          $spacer !default;
+// $card-img-overlay-padding:          $spacer !default;
+$card-img-overlay-padding:          $spacer * 2.5 !default; // custom
 $card-group-margin:                 $grid-gutter-width * .5 !default;
 // scss-docs-end card-variables
 

@@ -2,9 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Noto+Serif+TC:wght@400;700&family=Yeseva+One&display=swap');
 @import '../icofont/icofont.min.css';
 
+
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables';
+@import './utils/utilities';
 @import './utils/mixin';
+
+@import './base/base';
 
 @import './components/button';
 @import './components/card';
@@ -15,9 +19,6 @@
 @import './utils/font';
 
 @import './layout/header.scss';
-@import './layout/footer.scss';
-
-
 @import './pages/index.scss';
 
 @import "../../node_modules/bootstrap";

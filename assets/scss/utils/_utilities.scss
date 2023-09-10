@@ -1,0 +1,9 @@
+$utilities: (
+  "font-size": (
+    // 清除 rtl
+    rfs: false,
+    property: font-size,
+    class: fs,
+    values: $font-sizes
+  ),
+);
