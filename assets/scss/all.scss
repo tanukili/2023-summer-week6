@@ -7,6 +7,7 @@
 @import './utils/utilities';
 @import './utils/mixin';
 
+@import "/node_modules/bootstrap";
 @import './base/base';
 
 @import './components/button';
@@ -17,8 +18,8 @@
 @import './components/album-list';
 
 @import './utils/font';
+@import './utils/border';
 
 @import './layout/header.scss';
 @import './pages/index.scss';
 
-@import "/node_modules/bootstrap";
