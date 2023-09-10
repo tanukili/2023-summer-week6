@@ -1,0 +1,25 @@
+.album-list {
+  li {
+    & > * {
+      position: relative;
+      padding: 12px;
+      @include pad {
+        padding: 16px;
+      }
+      h5 {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%,-50%) rotate(-4deg);
+        padding: 8px 16px;
+      }
+    }
+    // 旋轉
+    &:nth-child(2n) { // 2的倍數
+      transform: rotate(2deg);
+    }
+    &:nth-child(3) { // 第三個
+      transform: rotate(-2deg);
+    }
+  }
+}

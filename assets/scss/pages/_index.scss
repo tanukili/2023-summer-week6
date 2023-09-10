@@ -7,6 +7,7 @@
     height: 518px;
   }
 }
+
 .index-nav{
   img {
     width: 40px;
@@ -21,6 +22,7 @@
     }
   }
 }
+
 .online-img {
   background: url(../images/event/online.jpg);
   width: 100%;
@@ -32,5 +34,12 @@
   }
   @include wed {
     height: 100%;
+  }
+}
+
+.album-img {
+  height: 267px;
+  @include pad {
+    height: 274px;
   }
 }
