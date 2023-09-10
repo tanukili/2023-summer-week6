@@ -2,3 +2,7 @@ img {
   object-fit: cover;
   object-position: center;
 }
+// sans 優先
+p {
+  font-family: "Noto Sans TC", var(--bs-font-sans-serif);
+}

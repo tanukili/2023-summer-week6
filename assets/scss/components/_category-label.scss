@@ -1,5 +1,9 @@
 .category-label {
-  padding: 4px 24px;
+  font-family: "Noto Serif TC",var(--bs-font-sans-serif);
+  font-weight: $font-weight-bold;
+  line-height: $line-height-lg;
+  font-size: $font-size-sm;
+  padding: 4px 16px;
   border: 1px solid $black;
   border-left: 4px solid $black;
   margin-right: 8px;
@@ -7,5 +11,10 @@
     background: $primary;
     color: $white;
     border-left-color: $secondary;
+  }
+  @include pad {
+    font-size: $font-size-base;
+    padding-right: 24px;
+    padding-left: 24px;
   }
 }

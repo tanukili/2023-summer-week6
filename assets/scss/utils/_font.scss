@@ -2,6 +2,9 @@
 .font-serif {
   font-family: "Noto Serif TC",var(--bs-font-sans-serif);
 }
+.font-sans {
+  font-family: "Noto Sans TC", var(--bs-font-sans-serif);
+}
 
 // RWD fs
 @include pad {

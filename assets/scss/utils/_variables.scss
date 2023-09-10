@@ -386,6 +386,7 @@ $spacers: (
   5: $spacer * 3,
   6: $spacer * 2, // custom
   7: $spacer * 1.25, // custom
+  8: $spacer * .75, // custom
   ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -1285,7 +1286,7 @@ $card-border-radius:                0 !default; // custom
 $card-box-shadow:                   null !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 // $card-cap-padding-y:                $card-spacer-y * .5 !default;
-$card-cap-padding-y:                $spacer * .5 !default; // custom
+$card-cap-padding-y:                $spacer * .75 !default; // custom
 // $card-cap-padding-x:                $card-spacer-x !default;
 $card-cap-padding-x:                0 !default;
 // $card-cap-bg:                       rgba($black, .03) !default;

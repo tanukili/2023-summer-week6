@@ -21,3 +21,16 @@
     }
   }
 }
+.online-img {
+  background: url(../images/event/online.jpg);
+  width: 100%;
+  min-height: 158px !important;
+  background-size: cover;
+  background-position: 0% 30%;
+  @include pad {
+    height: 255px;
+  }
+  @include wed {
+    height: 100%;
+  }
+}

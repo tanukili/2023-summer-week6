@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <%- include('./layout/header'); -%>
@@ -155,11 +158,34 @@
         </div>
       </div>
     </div>
-
     <!-- online -->
     <div class="container mb-6 pb-md-4 pt-md-1">
       <div class="title-bar">
-        <h2 class="fw-normal fs-4 fs-md-2 lh-sm">RECENT<span class="font-serif fs-6 fs-md-5 fs-lg-2 fw-bold lh-lg">近期活動</span></h2>
+        <h2 class="fw-normal fs-4 fs-md-2 lh-sm">ONLINE<span class="font-serif fs-6 fs-md-5 fs-lg-2 fw-bold lh-lg">線上活動</span></h2>
+      </div>
+      <div class="card mt-4 mt-lg-6">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="online-img mt-0 mb-8 mb-lg-0"></div>
+          </div>
+          <div class="col-lg-5">
+            <div class="card-body">
+              <h3 class="card-title font-serif fs-7 fs-md-4 fs-lg-2 lh-lg text-black mb-lg-3">切特居批踢</h3>
+              <nav class="d-flex mb-8 mb-md-7 mb-lg-6">
+                <a href="#" class="category-label">競賽</a>
+                <a href="#" class="category-label">科技</a>
+                <a href="#" class="category-label">有趣</a>
+              </nav>
+              <p class="card-text mb-8 mb-md-6" style="height: auto;">
+                最近網路上很流行的AI程式 ChatGPT，可以用來聊天或是查詢、整理各種資料，不同的應用方式如雨後春筍般冒出來。<br>這個活動讓大家把自己最有特色的使用方法提出來讓大家參考，也會投票出最有趣的用法。<br>該讓其他人知道自己使用 ChatGPT 的姿勢才是最特別的那個了！
+              </p>
+              <a href="activity.html" class="btn btn-primary w-100 fs-6 fs-md-5 lh-lg py-3">
+                查看活動詳情
+                <i class="icofont-rounded-double-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="pt-md-1">
@@ -169,7 +195,7 @@
     </div>
 
     <%- include('./layout/footer'); -%>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script type="module" src="../main.js"></script>
   </body>
 </html>
